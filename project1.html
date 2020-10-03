@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>myNotes</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    .icons a i {
+      margin: 6px;
+      padding: 5px;
+      font-size: 26px;
+      font-weight: 300;
+    }
+    .navbar{
+      box-shadow: 2px 2px 8px rgba(0,0,0,.34);
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+    }
+
+    i {
+      color: black;
+    }
+
+    .fa-instagram:hover {
+      color: rgb(128, 0, 49);
+    }
+
+    .fa-facebook:hover {
+      color: rgb(20, 82, 250);
+    }
+
+    .fa-github:hover {
+      color: gray;
+    }
+
+    .folow {
+      padding-left: 8px;
+    }
+
+    @media only screen and (max-width:600px) {
+      .icons {
+        text-align: center;
+      }
+
+      .folow {
+        text-align: center;
+      }
+
+      .para {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 30px;
+        padding-left: 0;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">myNotes</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" id="searchTxt" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  <div class="alert alert-success alert-dismissible fade show" role="alert">
+    <strong>Updated version</strong> comming soon click <a href="https://jaydeep-shelake.github.io/portfolio/" target="_blank"> here</a> to know about me      <!--alert section-->
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>   
+  <div class="container my-3">
+    <h1>Welcome to myNotes App</h1>
+    <div class="card">
+        <div class="card-body">
+          <h5 class="card-title ">Add a Title</h5>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1"></label>
+          <textarea class="form-control" id="addTitle" rows="2" placeholder="Enter your title"></textarea>
+        </div>
+          <h5 class="card-title">Add a note</h5>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1"></label>
+            <textarea class="form-control" id="addTxt" rows="3" placeholder="Enter your note"></textarea>
+          </div>
+          <button class="btn btn-primary type=" submit" id='addBtn'>Add a Note</button>
+
+        </div>
+      </div>
+      <h1>Your notes</h1>
+      <hr>
+      <div id="notes" class="row container-fluid">
+      </div>
+    </div>
+  </div>
+    <div class="container my-3">
+      <hr>
+      <p style="color: gray;" class="para">&copy; Copyrights reserved Jaydeep Shelake 2020* Website Devloped and
+        maintain by Jaydeep Shelake</p>
+      <p class="folow">follow me on</p>
+      <div class="icons">
+        <a href="https://instagram.com/jaydeep_shelake101" target="_blank"><i class="fa fa-instagram"></i></a>
+        <a href="https://facebook.com/jaydeep.shelake.100" target="_blank"><i class="fa fa-facebook"></i></a>
+        <a href="https://github.com/jaydeep-shelake" target="_blank"><i class="fa fa-github"></i></a>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"></script>
+    <script src="project1.js"></script>
+</body>
+
+</html>
